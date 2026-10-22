@@ -1,0 +1,111 @@
+
+.cascade-container {
+    position: relative;
+    width: 100%;
+    max-width: 950px; 
+    height: 460px;    
+    margin: 50px auto;
+    padding: 10px;
+}
+
+
+.travel-card {
+    position: absolute;
+    width: 300px;  /* Enforces uniform width */
+    height: 400px; /* Enforces uniform height */
+    border-radius: 16px;
+    background-color: #ffffff;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.12);
+    overflow: hidden; /* CRUCIAL: Keeps the text box hidden beneath the card edge */
+    cursor: pointer;
+    
+    /* Smooth transitions for moving, scaling, and handling layers on hover */
+    transition: transform 0.4s cubic-bezier(0.165, 0.84, 0.44, 1), 
+                box-shadow 0.3s ease, 
+                z-index 0s;
+}
+
+/* ==========================================================================
+   3. THE CASCADING REARRANGEMENT & OVERLAP
+   ========================================================================== */
+/* Left Card: Angled slightly counter-clockwise, placed at the bottom layer */
+.img-1 { 
+    left: 5%; 
+    top: 10px; 
+    transform: rotate(-4deg); 
+    z-index: 1; 
+}
+
+/* Center Card: Angled slightly clockwise, placed on the middle layer */
+.img-2 { 
+    left: 35%; 
+    top: 25px; 
+    transform: rotate(2deg); 
+    z-index: 2; 
+}
+
+/* Right Card: Angled slightly counter-clockwise, placed at the bottom layer */
+.img-3 { 
+    left: 65%; 
+    top: 5px; 
+    transform: rotate(-2deg); 
+    z-index: 1; 
+}
+
+
+.travel-card:hover {
+    transform: scale(1.06) rotate(0deg) translateY(-15px); 
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.25);
+    z-index: 99; 
+}
+
+
+.travel-card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+/* Subtle image zoom on hover for a high-end feel */
+.travel-card:hover img {
+    transform: scale(1.04);
+}
+
+
+.info-box {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 35px 20px 20px 20px;
+    
+
+    background: linear-gradient(transparent, rgba(0, 0, 0, 0.9) 35%);
+    color: #ffffff;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    
+    /* Pushes the text box completely down out of sight */
+    transform: translateY(100%); 
+    transition: transform 0.35s cubic-bezier(0.25, 1, 0.5, 1);
+}
+
+
+.travel-card:hover .info-box {
+    transform: translateY(0);
+}
+
+.info-box h3 {
+    margin: 0 0 6px 0;
+    font-size: 1.3rem;
+    font-weight: 700;
+    color: #ffb703; 
+}
+
+.info-box p {
+    margin: 0;
+    font-size: 0.88rem;
+    line-height: 1.4;
+    opacity: 0.95;
+}
