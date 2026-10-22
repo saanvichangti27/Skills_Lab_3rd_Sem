@@ -1,16 +1,106 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Travel</title>
-</head>
-<body>
-    <header> SPAIN</header>
-    <div class="cascade-container">
-  <img src="https://lh3.googleusercontent.com/gps-cs-s/ANWiy9QrOsNPdIQZq_Jn8uhqH6kACur0E1sRAHhoNONAtOfiHXO86HUIq4Ry8H7YNStMQIJrbeAaXz3Ryke-ebcVHcyr42KFrxwDTU3RNxtA4Rlo35yvL-_tJSu1dQtuWKs_XnyW43COZ3dQLEya=s1360-w1360-h1020-rw" alt="First image" class="img-cascade img-1">
-  <img src="image2.jpg" alt="Second image" class="img-cascade img-2">
-  <img src="image3.jpg" alt="Third image" class="img-cascade img-3">
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+      
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+
+    <!-- Toggle Section -->
+<div class="toggle-container">
+  <!-- Hidden Radio Inputs to track the active tab -->
+  <input type="radio" id="tab-food" name="category-toggle" checked />
+  <input type="radio" id="tab-culture" name="category-toggle" />
+
+  <!-- Labels acting as clickable toggle buttons -->
+  <div class="toggle-buttons">
+    <label for="tab-food" class="btn">Food</label>
+    <label for="tab-culture" class="btn">Culture</label>
+  </div>
+
+  <!-- Content Areas -->
+  <div class="content-wrapper">
+    <!-- Food Cards -->
+    <div class="content-section food-content">
+      <div class="card">
+        <img src="https://www.foxandbriar.com/patatas-bravas/" alt="Dish 1" />
+        <div class="card-text">
+          <h3>Patatas Bravas</h3>
+          <p>A classic Spanish tapas dish consisting of crispy, fried potato cubes served with a spicy tomato sauce and often topped with a creamy garlic aioli.</p>
+        </div>
+      </div>
+      <div class="card">
+        <img src="https://www.realsimple.com/food-recipes/browse-all-recipes/churros-with-chocolate-sauce" alt="Spanish Tapas" />
+        <div class="card-text">
+          <h3>Churros con Chocolate</h3>
+          <p>A traditional Spanish treat featuring crispy, golden, star-shaped fried dough pastries served with a thick, rich cup of hot chocolate for dipping</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Culture Cards -->
+    <div class="content-section culture-content">
+      <div class="card">
+        <img src="https://www.britannica.com/art/flamenco" alt="Flamenco Dance" />
+        <div class="card-text">
+          <h3>Flamenco</h3>
+          <p>An expressive, passionate traditional dance form native to Andalusia.</p>
+        </div>
+      </div>
+      <div class="card">
+        <img src="gaudi.jpg" alt="Sagrada Familia" />
+        <div class="card-text">
+          <h3>Architecture</h3>
+          <p>Explore stunning masterpieces like Antoni Gaudí's Sagrada Família.</p>
+        </div>
+      </div>
+    </div>
+  </div>
 </div>
-</body>
+
+  </body>
 </html>

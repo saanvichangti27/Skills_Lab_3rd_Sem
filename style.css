@@ -1,0 +1,187 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Container to center the content */
+.toggle-container {
+  max-width: 800px;
+  margin: 30px auto;
+  font-family: Arial, sans-serif;
+  text-align: center;
+}
+
+/* Hide the background radio elements */
+input[name="category-toggle"] {
+  display: none;
+}
+
+/* Simple button row layout */
+.toggle-buttons {
+  margin-bottom: 25px;
+}
+
+/* Standard tab button styling */
+.btn {
+  display: inline-block;
+  padding: 10px 25px;
+  margin: 0 5px;
+  background-color: #eee;
+  border: 1px solid #ccc;
+  cursor: pointer;
+}
+
+/* Highlight the active button when checked */
+#tab-food:checked ~ .toggle-buttons label[for="tab-food"],
+#tab-culture:checked ~ .toggle-buttons label[for="tab-culture"] {
+  background-color: #cc0000; /* Simple red accent */
+  color: white;
+  border-color: #cc0000;
+}
+
+/* Basic fade animation */
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+/* Hide content blocks by default */
+.content-section {
+  display: none;
+  gap: 20px;
+}
+
+/* Display the active section and run the fade */
+#tab-food:checked ~ .content-wrapper .food-content,
+#tab-culture:checked ~ .content-wrapper .culture-content {
+  display: flex;
+  animation: fadeIn 0.4s ease;
+}
+
+/* Plain 2-column card box */
+.card {
+  width: 50%;
+  border: 1px solid #ccc;
+  text-align: left;
+  background-color: #fff;
+}
+
+/* Force images to fit nicely inside the box */
+.card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+
+/* Space inside the card text zone */
+.card-text {
+  padding: 15px;
+}
