@@ -1,6 +1,6 @@
-
 <!doctype html>
 <html lang="en">
+
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -9,10 +9,13 @@
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@400;500;600&display=swap" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@400;500;600&display=swap"
+    rel="stylesheet">
 
   <link rel="stylesheet" href="style.css">
 </head>
+
 <body class="home-design">
 
   <header class="site-header">
@@ -46,14 +49,12 @@
 
     <div class="header-search compatibility-search">
       <span class="search-icon">⌕</span>
-      <input id="country-search" type="search"
-        placeholder="Search countries..." autocomplete="off"
+      <input id="country-search" type="search" placeholder="Search countries..." autocomplete="off"
         aria-label="Search countries">
       <div id="search-results" class="search-results" role="listbox"></div>
     </div>
 
-    <button class="mobile-menu" id="mobile-search-toggle"
-      aria-label="Search destinations">⌕</button>
+    <button class="mobile-menu" id="mobile-search-toggle" aria-label="Search destinations">⌕</button>
   </header>
 
   <main>
@@ -63,44 +64,35 @@
       <div class="sketch-heading">
         <p class="eyebrow">YOUR JOURNEY STARTS HERE</p>
         <h1>Explore the World</h1>
-        <p>One world. Countless places to discover.</p>
       </div>
 
       <div class="sketch-globe-area">
         <div class="sketch-orbit sketch-orbit-one"></div>
         <div class="sketch-orbit sketch-orbit-two"></div>
 
-        <div id="globe-canvas" class="globe-canvas"
-          aria-label="Interactive 3D Earth"></div>
+        <div id="globe-canvas" class="globe-canvas" aria-label="Interactive 3D Earth"></div>
 
         <div class="globe-loading" id="globe-loading">
           <span class="loader"></span>
           <span>Preparing your world...</span>
         </div>
 
-        <div class="globe-label">EXPLORE • DISCOVER • EXPERIENCE</div>
       </div>
 
       <!-- Used by app.js to create country buttons, hidden in this design -->
-      <aside class="country-rail" id="country-rail"
-        aria-label="Available countries"></aside>
+      <aside class="country-rail" id="country-rail" aria-label="Available countries"></aside>
 
       <div class="sketch-bottom">
-        <p>Ready to turn your dreams into a journey?</p>
         <button class="itinerary-button" id="make-itinerary">
           <span>✧</span> Make Itinerary <span class="button-arrow">→</span>
         </button>
       </div>
 
-      <div class="home-footer">
-        <span>TRAVEL THE WORLD, YOUR WAY</span>
-        <span>DISCOVER YOUR NEXT DESTINATION</span>
-      </div>
+
     </section>
 
     <!-- COUNTRY INFORMATION PAGE: retained -->
-    <section class="view country-view" id="country-view"
-      aria-label="Country destinations">
+    <section class="view country-view" id="country-view" aria-label="Country destinations">
 
       <div class="country-hero" id="country-hero">
         <div class="hero-shade"></div>
@@ -133,10 +125,8 @@
             <h2>Discover <em id="discover-country">Japan</em></h2>
           </div>
           <div class="slider-controls">
-            <button class="circle-button" id="slide-prev"
-              aria-label="Previous destinations">←</button>
-            <button class="circle-button" id="slide-next"
-              aria-label="Next destinations">→</button>
+            <button class="circle-button" id="slide-prev" aria-label="Previous destinations">←</button>
+            <button class="circle-button" id="slide-next" aria-label="Next destinations">→</button>
           </div>
         </div>
 
@@ -168,11 +158,9 @@
 
   <!-- Destination information popup -->
   <div class="destination-modal" id="destination-modal" aria-hidden="true">
-    <button class="modal-backdrop" id="modal-close-backdrop"
-      aria-label="Close destination details"></button>
+    <button class="modal-backdrop" id="modal-close-backdrop" aria-label="Close destination details"></button>
 
-    <article class="modal-card" role="dialog" aria-modal="true"
-      aria-labelledby="modal-title">
+    <article class="modal-card" role="dialog" aria-modal="true" aria-labelledby="modal-title">
       <button class="modal-close" id="modal-close" aria-label="Close">×</button>
 
       <div class="modal-image" id="modal-image"></div>
@@ -196,4 +184,5 @@
   <script src="globe.js"></script>
   <script src="app.js"></script>
 </body>
+
 </html>
