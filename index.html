@@ -5,79 +5,124 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="theme-color" content="#06111f">
-  <meta name="description" content="TravelTheWorld — explore the world, one destination at a time.">
-  <title>TravelTheWorld — Explore the World</title>
+  <title>TravelTheWorld | Explore the World</title>
+
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@400;500;600&display=swap" rel="stylesheet">
+
   <link rel="stylesheet" href="style.css">
 </head>
-<body>
-  <div class="ambient ambient-one"></div>
-  <div class="ambient ambient-two"></div>
+<body class="home-design">
 
   <header class="site-header">
-    <a class="brand" href="#" id="brand-home" aria-label="TravelTheWorld home">
-      <span class="brand-mark">◎</span><span>TravelTheWorld</span>
+    <a class="brand" href="#" id="brand-home">
+      <span class="brand-mark">◎</span>
+      <span>TravelTheWorld</span>
     </a>
-    <nav class="main-nav" aria-label="Main navigation">
+
+    <div class="home-header-actions">
+      <label class="destination-label" for="featured-country-select">
+        Destinations
+      </label>
+
+      <div class="country-select-wrap">
+        <select id="featured-country-select" aria-label="Choose a destination">
+          <option value="">Select a country</option>
+          <option value="japan">🇯🇵 Japan</option>
+          <option value="italy">🇮🇹 Italy</option>
+          <option value="india">🇮🇳 India</option>
+        </select>
+        <span class="select-arrow">⌄</span>
+      </div>
+    </div>
+
+    <!-- Retained for compatibility with the existing app.js -->
+    <nav class="main-nav compatibility-nav" aria-label="Navigation">
       <button class="nav-link active" id="nav-explore">Explore</button>
       <button class="nav-link" id="nav-destinations">Destinations</button>
       <button class="nav-link" id="nav-about">About</button>
     </nav>
-    <div class="header-search">
+
+    <div class="header-search compatibility-search">
       <span class="search-icon">⌕</span>
-      <input id="country-search" type="search" placeholder="Search countries..." autocomplete="off" aria-label="Search countries">
+      <input id="country-search" type="search"
+        placeholder="Search countries..." autocomplete="off"
+        aria-label="Search countries">
       <div id="search-results" class="search-results" role="listbox"></div>
     </div>
-    <button class="mobile-menu" id="mobile-search-toggle" aria-label="Search destinations">⌕</button>
+
+    <button class="mobile-menu" id="mobile-search-toggle"
+      aria-label="Search destinations">⌕</button>
   </header>
 
   <main>
-    <section class="view globe-view active-view" id="globe-view" aria-label="Explore the world">
-      <div class="globe-copy">
-        <p class="eyebrow">YOUR NEXT CHAPTER BEGINS HERE</p>
-        <h1>Explore<br>the <em>World.</em></h1>
-        <p class="intro">Discover breathtaking destinations, rich cultures and unforgettable experiences.</p>
-        <div class="globe-hint">
-          <span class="hint-icon">✧</span>
-          <span>Choose a glowing point<br>or search for a country.</span>
-        </div>
+    <!-- HOME PAGE -->
+    <section class="view globe-view active-view" id="globe-view">
+
+      <div class="sketch-heading">
+        <p class="eyebrow">YOUR JOURNEY STARTS HERE</p>
+        <h1>Explore the World</h1>
+        <p>One world. Countless places to discover.</p>
       </div>
 
-      <div class="globe-stage">
-        <div class="globe-orbit orbit-one"></div>
-        <div class="globe-orbit orbit-two"></div>
-        <div id="globe-canvas" class="globe-canvas" aria-label="Interactive 3D Earth"></div>
+      <div class="sketch-globe-area">
+        <div class="sketch-orbit sketch-orbit-one"></div>
+        <div class="sketch-orbit sketch-orbit-two"></div>
+
+        <div id="globe-canvas" class="globe-canvas"
+          aria-label="Interactive 3D Earth"></div>
+
         <div class="globe-loading" id="globe-loading">
-          <span class="loader"></span><span>Preparing your world...</span>
+          <span class="loader"></span>
+          <span>Preparing your world...</span>
         </div>
-        <div class="globe-label" id="globe-label">EARTH / 01</div>
-        <div class="drag-hint"><span>↔</span> Drag to rotate</div>
+
+        <div class="globe-label">EXPLORE • DISCOVER • EXPERIENCE</div>
       </div>
 
-      <aside class="country-rail" aria-label="Popular countries" id="country-rail"></aside>
+      <!-- Used by app.js to create country buttons, hidden in this design -->
+      <aside class="country-rail" id="country-rail"
+        aria-label="Available countries"></aside>
+
+      <div class="sketch-bottom">
+        <p>Ready to turn your dreams into a journey?</p>
+        <button class="itinerary-button" id="make-itinerary">
+          <span>✧</span> Make Itinerary <span class="button-arrow">→</span>
+        </button>
+      </div>
+
       <div class="home-footer">
-        <span>CURATED FOR THE CURIOUS</span><span>01 — DISCOVER</span>
+        <span>TRAVEL THE WORLD, YOUR WAY</span>
+        <span>DISCOVER YOUR NEXT DESTINATION</span>
       </div>
     </section>
 
-    <section class="view country-view" id="country-view" aria-label="Country destinations">
+    <!-- COUNTRY INFORMATION PAGE: retained -->
+    <section class="view country-view" id="country-view"
+      aria-label="Country destinations">
+
       <div class="country-hero" id="country-hero">
         <div class="hero-shade"></div>
+
         <div class="country-topline">
-          <button class="back-button" id="back-to-globe"><span>←</span> Back to globe</button>
+          <button class="back-button" id="back-to-globe">
+            <span>←</span> Back to globe
+          </button>
           <span class="eyebrow" id="country-region">ASIA / 01</span>
         </div>
+
         <div class="hero-content">
           <p class="eyebrow">A WORLD OF ITS OWN</p>
           <h1 id="country-name">Japan</h1>
-          <p class="hero-tagline" id="country-tagline">Ancient traditions. Modern wonders.</p>
+          <p class="hero-tagline" id="country-tagline"></p>
           <p class="hero-description" id="country-description"></p>
           <div class="country-facts" id="country-facts"></div>
         </div>
+
         <div class="hero-bottom">
-          <span id="hero-index">DESTINATION 01</span><span>SCROLL TO EXPLORE ↓</span>
+          <span id="hero-index">DESTINATION 01</span>
+          <span>SCROLL TO EXPLORE ↓</span>
         </div>
       </div>
 
@@ -88,14 +133,21 @@
             <h2>Discover <em id="discover-country">Japan</em></h2>
           </div>
           <div class="slider-controls">
-            <button class="circle-button" id="slide-prev" aria-label="Previous destinations">←</button>
-            <button class="circle-button" id="slide-next" aria-label="Next destinations">→</button>
+            <button class="circle-button" id="slide-prev"
+              aria-label="Previous destinations">←</button>
+            <button class="circle-button" id="slide-next"
+              aria-label="Next destinations">→</button>
           </div>
         </div>
-        <p class="section-subtitle">A few remarkable places to begin your journey. Hover over a card to uncover its story.</p>
+
+        <p class="section-subtitle">
+          Discover remarkable places and find inspiration for your next journey.
+        </p>
+
         <div class="gallery-window">
           <div class="destination-track" id="destination-track"></div>
         </div>
+
         <div class="gallery-progress">
           <span id="gallery-count">01 / 04</span>
           <div class="progress-line"><span id="progress-fill"></span></div>
@@ -104,24 +156,35 @@
       </section>
 
       <footer class="site-footer">
-        <a class="brand" href="#" id="footer-home"><span class="brand-mark">◎</span><span>TravelTheWorld</span></a>
+        <a class="brand" href="#" id="footer-home">
+          <span class="brand-mark">◎</span>
+          <span>TravelTheWorld</span>
+        </a>
         <span>THE WORLD IS CLOSER THAN YOU THINK.</span>
         <button id="footer-back">Return to Earth ↑</button>
       </footer>
     </section>
   </main>
 
+  <!-- Destination information popup -->
   <div class="destination-modal" id="destination-modal" aria-hidden="true">
-    <button class="modal-backdrop" id="modal-close-backdrop" aria-label="Close destination details"></button>
-    <article class="modal-card" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+    <button class="modal-backdrop" id="modal-close-backdrop"
+      aria-label="Close destination details"></button>
+
+    <article class="modal-card" role="dialog" aria-modal="true"
+      aria-labelledby="modal-title">
       <button class="modal-close" id="modal-close" aria-label="Close">×</button>
+
       <div class="modal-image" id="modal-image"></div>
+
       <div class="modal-copy">
         <p class="eyebrow" id="modal-country"></p>
         <h2 id="modal-title"></h2>
         <p id="modal-description"></p>
         <div class="modal-meta" id="modal-meta"></div>
-        <button class="text-button" id="modal-done">Keep exploring <span>→</span></button>
+        <button class="text-button" id="modal-done">
+          Keep exploring <span>→</span>
+        </button>
       </div>
     </article>
   </div>

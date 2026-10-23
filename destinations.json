@@ -1,0 +1,290 @@
+
+{
+  "japan": {
+    "name": "Japan",
+    "flag": "🇯🇵",
+    "region": "Asia",
+    "capital": "Tokyo",
+    "currency": "Yen (JPY)",
+    "language": "Japanese",
+    "tagline": "Ancient traditions. Modern wonders.",
+    "description": "From neon-lit cities to serene temples, Japan is a country of contrasts — where tradition and innovation exist in perfect harmony.",
+    "hero": "https://images.unsplash.com/photo-1493976040374-85c8e12f0c0e?auto=format&fit=crop&w=2000&q=88",
+    "lat": 36.2,
+    "lon": 138.25,
+    "destinations": [
+      {
+        "name": "Mount Fuji",
+        "subtitle": "Iconic mountain scenery",
+        "description": "Japan's most famous peak rises above lakes and forests, offering unforgettable views in every season. Explore lakeside villages, scenic trails and peaceful viewpoints beneath its snow-capped summit.",
+        "image": "https://images.unsplash.com/photo-1490806843957-31f4c9a91c65?auto=format&fit=crop&w=1000&q=85",
+        "best": "Spring · Autumn",
+        "duration": "1–2 days"
+      },
+      {
+        "name": "Kyoto",
+        "subtitle": "Temples and traditions",
+        "description": "Wander through vermilion torii gates, quiet bamboo groves and lantern-lit lanes. Kyoto rewards slow exploration, from traditional tea houses to centuries-old shrines tucked into green hillsides.",
+        "image": "https://images.unsplash.com/photo-1493976040374-85c8e12f0c0e?auto=format&fit=crop&w=1000&q=85",
+        "best": "Spring · Autumn",
+        "duration": "2–3 days"
+      },
+      {
+        "name": "Tokyo",
+        "subtitle": "The energy of the city",
+        "description": "A city of dazzling contrasts: tiny ramen bars, contemporary art, peaceful gardens and neon-lit streets. Tokyo's neighbourhoods each feel like a different world waiting to be explored.",
+        "image": "https://images.unsplash.com/photo-1503899036084-c55cdd92da26?auto=format&fit=crop&w=1000&q=85",
+        "best": "Year-round",
+        "duration": "3–4 days"
+      },
+      {
+        "name": "Okinawa",
+        "subtitle": "Island escapes",
+        "description": "Trade city streets for turquoise water, coral reefs and soft sandy beaches. Okinawa's subtropical islands have their own distinctive culture, cuisine and relaxed pace of life.",
+        "image": "https://images.unsplash.com/photo-1510414842594-a61c69b5ae57?auto=format&fit=crop&w=1000&q=85",
+        "best": "April – October",
+        "duration": "2–4 days"
+      }
+    ]
+  },
+
+  "italy": {
+    "name": "Italy",
+    "flag": "🇮🇹",
+    "region": "Europe",
+    "capital": "Rome",
+    "currency": "Euro (EUR)",
+    "language": "Italian",
+    "tagline": "A timeless love affair with life.",
+    "description": "Ancient cities, sunlit coastlines and extraordinary food come together in a country made for lingering, wandering and discovering something beautiful around every corner.",
+    "hero": "https://images.unsplash.com/photo-1516483638261-f4dbaf036963?auto=format&fit=crop&w=2000&q=88",
+    "lat": 41.9,
+    "lon": 12.5,
+    "destinations": [
+      {
+        "name": "Amalfi Coast",
+        "subtitle": "Cliffside coastal charm",
+        "description": "Pastel villages cling to dramatic cliffs above the Mediterranean. Take the scenic coastal road, linger over long lunches and find quiet coves between the lively seaside towns.",
+        "image": "https://images.unsplash.com/photo-1533587851505-d119e13fa0d7?auto=format&fit=crop&w=1000&q=85",
+        "best": "May – September",
+        "duration": "2–3 days"
+      },
+      {
+        "name": "Rome",
+        "subtitle": "Layers of living history",
+        "description": "Walk through an open-air museum where ancient ruins sit beside lively piazzas. From the Colosseum to neighbourhood trattorias, Rome is best enjoyed with time to get pleasantly lost.",
+        "image": "https://images.unsplash.com/photo-1552832230-c0197dd311b5?auto=format&fit=crop&w=1000&q=85",
+        "best": "April – June",
+        "duration": "2–4 days"
+      },
+      {
+        "name": "Venice",
+        "subtitle": "A city on the water",
+        "description": "Glide along quiet canals, cross elegant bridges and discover tiny squares away from the crowds. Venice feels most magical early in the morning and as the evening light settles.",
+        "image": "https://images.unsplash.com/photo-1514890547357-a9ee288728e0?auto=format&fit=crop&w=1000&q=85",
+        "best": "April – October",
+        "duration": "1–2 days"
+      },
+      {
+        "name": "Tuscany",
+        "subtitle": "Rolling hills and vineyards",
+        "description": "Cypress-lined roads wind through golden hills, historic villages and vineyards. Make space for farm-to-table meals, small-town markets and slow afternoons in the countryside.",
+        "image": "https://images.unsplash.com/photo-1516483638261-f4dbaf036963?auto=format&fit=crop&w=1000&q=85",
+        "best": "May – October",
+        "duration": "2–3 days"
+      }
+    ]
+  },
+
+  "france": {
+    "name": "France",
+    "flag": "🇫🇷",
+    "region": "Europe",
+    "capital": "Paris",
+    "currency": "Euro (EUR)",
+    "language": "French",
+    "tagline": "Art de vivre, from city to countryside.",
+    "description": "From iconic boulevards and world-class museums to lavender fields and Alpine villages, France invites you to savour every place at your own pace.",
+    "hero": "https://images.unsplash.com/photo-1502602898657-3e91760cbb34?auto=format&fit=crop&w=2000&q=88",
+    "lat": 46.2,
+    "lon": 2.2,
+    "destinations": [
+      {
+        "name": "Paris",
+        "subtitle": "The city of light",
+        "description": "Stroll along the Seine, browse neighbourhood cafés and discover art around every corner. Beyond the famous landmarks, Paris is a collection of distinct villages full of everyday magic.",
+        "image": "https://images.unsplash.com/photo-1502602898657-3e91760cbb34?auto=format&fit=crop&w=1000&q=85",
+        "best": "April – June",
+        "duration": "3–4 days"
+      },
+      {
+        "name": "Provence",
+        "subtitle": "Lavender and slow living",
+        "description": "Stone villages, open-air markets and rolling lavender fields make Provence a place to slow down. Visit in summer for colour, or autumn for golden light and quieter roads.",
+        "image": "https://images.unsplash.com/photo-1499002238440-d264edd596ec?auto=format&fit=crop&w=1000&q=85",
+        "best": "June – September",
+        "duration": "2–3 days"
+      },
+      {
+        "name": "French Riviera",
+        "subtitle": "Mediterranean glamour",
+        "description": "Explore seaside promenades, pebble beaches and colourful old towns along the Côte d'Azur. Mix a little glamour with coastal walks and long meals beside the water.",
+        "image": "https://images.unsplash.com/photo-1533105079780-92b9be482077?auto=format&fit=crop&w=1000&q=85",
+        "best": "May – September",
+        "duration": "2–4 days"
+      },
+      {
+        "name": "Chamonix",
+        "subtitle": "Alpine mountain air",
+        "description": "A gateway to dramatic peaks and alpine adventures. Ride cable cars for panoramic views, explore mountain trails and settle into a cosy café after a day outdoors.",
+        "image": "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?auto=format&fit=crop&w=1000&q=85",
+        "best": "June – September",
+        "duration": "2–3 days"
+      }
+    ]
+  },
+
+  "usa": {
+    "name": "United States",
+    "flag": "🇺🇸",
+    "region": "North America",
+    "capital": "Washington, D.C.",
+    "currency": "US Dollar (USD)",
+    "language": "English",
+    "tagline": "Big horizons. Endless possibilities.",
+    "description": "A vast patchwork of creative cities, spectacular national parks and road-trip landscapes — every region brings a different rhythm and a new story.",
+    "hero": "https://images.unsplash.com/photo-1501594907352-04cda38ebc29?auto=format&fit=crop&w=2000&q=88",
+    "lat": 39.8,
+    "lon": -98.6,
+    "destinations": [
+      {
+        "name": "New York City",
+        "subtitle": "The city that never sleeps",
+        "description": "Iconic skylines, neighbourhood food scenes, galleries and green spaces make New York endlessly explorable. Pick a few neighbourhoods each day and let the city surprise you.",
+        "image": "https://images.unsplash.com/photo-1496442226666-8d4d0e62e6e9?auto=format&fit=crop&w=1000&q=85",
+        "best": "April – June",
+        "duration": "3–5 days"
+      },
+      {
+        "name": "Grand Canyon",
+        "subtitle": "Nature on a monumental scale",
+        "description": "Layered red rock stretches toward the horizon in one of the world's great natural spectacles. Sunrise and sunset bring shifting colour, while rim trails offer views for every pace.",
+        "image": "https://images.unsplash.com/photo-1474044159687-1ee9f3a51722?auto=format&fit=crop&w=1000&q=85",
+        "best": "March – May",
+        "duration": "1–2 days"
+      },
+      {
+        "name": "San Francisco",
+        "subtitle": "Hills, bay and creativity",
+        "description": "Ride historic cable cars, walk waterfront neighbourhoods and cross the Golden Gate Bridge. The city rewards curious wandering and a willingness to pack a light layer.",
+        "image": "https://images.unsplash.com/photo-1501594907352-04cda38ebc29?auto=format&fit=crop&w=1000&q=85",
+        "best": "September – October",
+        "duration": "2–3 days"
+      },
+      {
+        "name": "Yosemite",
+        "subtitle": "Granite cliffs and forests",
+        "description": "Towering cliffs, waterfalls and giant sequoias make Yosemite a dream for nature lovers. Scenic viewpoints are spectacular, but the quieter trails can be just as memorable.",
+        "image": "https://images.unsplash.com/photo-1472396961693-142e6e269027?auto=format&fit=crop&w=1000&q=85",
+        "best": "May – September",
+        "duration": "2–3 days"
+      }
+    ]
+  },
+
+  "australia": {
+    "name": "Australia",
+    "flag": "🇦🇺",
+    "region": "Oceania",
+    "capital": "Canberra",
+    "currency": "Australian Dollar (AUD)",
+    "language": "English",
+    "tagline": "Wild beauty, wide-open skies.",
+    "description": "Explore vibrant harbour cities, ancient landscapes, coral reefs and extraordinary wildlife across a continent built for memorable journeys.",
+    "hero": "https://images.unsplash.com/photo-1506973035872-a4ec16b8e8d9?auto=format&fit=crop&w=2000&q=88",
+    "lat": -25.3,
+    "lon": 133.8,
+    "destinations": [
+      {
+        "name": "Sydney",
+        "subtitle": "Harbour city icons",
+        "description": "A sparkling harbour, coastal walks and lively neighbourhoods set the scene. Catch the city from the water, then explore beaches and cafés beyond the postcard views.",
+        "image": "https://images.unsplash.com/photo-1506973035872-a4ec16b8e8d9?auto=format&fit=crop&w=1000&q=85",
+        "best": "September – November",
+        "duration": "2–4 days"
+      },
+      {
+        "name": "Great Barrier Reef",
+        "subtitle": "An underwater wonderland",
+        "description": "A vast world of coral gardens and marine life lies just offshore in Queensland. Choose a responsible reef tour and discover the colours and complexity of this remarkable ecosystem.",
+        "image": "https://images.unsplash.com/photo-1544551763-46a013bb70d5?auto=format&fit=crop&w=1000&q=85",
+        "best": "June – October",
+        "duration": "1–3 days"
+      },
+      {
+        "name": "Uluru",
+        "subtitle": "Ancient desert country",
+        "description": "This immense sandstone formation glows with changing colours through the day. Learn about its deep cultural significance and follow local guidance when visiting this sacred place.",
+        "image": "https://images.unsplash.com/photo-1509316785289-025f5b846b35?auto=format&fit=crop&w=1000&q=85",
+        "best": "May – September",
+        "duration": "1–2 days"
+      },
+      {
+        "name": "Great Ocean Road",
+        "subtitle": "A spectacular coastal drive",
+        "description": "Wind along dramatic cliffs, surf beaches and forested stretches of southern coastline. Take your time for short walks and lookouts along this classic road trip.",
+        "image": "https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&w=1000&q=85",
+        "best": "October – April",
+        "duration": "1–2 days"
+      }
+    ]
+  },
+
+  "india": {
+    "name": "India",
+    "flag": "🇮🇳",
+    "region": "South Asia",
+    "capital": "New Delhi",
+    "currency": "Indian Rupee (INR)",
+    "language": "Hindi and English",
+    "tagline": "A thousand worlds in one journey.",
+    "description": "A tapestry of languages, landscapes, flavours and living traditions — from Himalayan horizons to bustling cities and tranquil tropical shores.",
+    "hero": "https://images.unsplash.com/photo-1524492412937-b28074a5d7da?auto=format&fit=crop&w=2000&q=88",
+    "lat": 22.5,
+    "lon": 79,
+    "destinations": [
+      {
+        "name": "Taj Mahal",
+        "subtitle": "A monument to enduring love",
+        "description": "Marble domes and delicate inlay work make the Taj Mahal extraordinary at every scale. Arrive early for softer light and take time to appreciate the gardens and symmetry.",
+        "image": "https://images.unsplash.com/photo-1564507592333-c60657eea523?auto=format&fit=crop&w=1000&q=85",
+        "best": "October – March",
+        "duration": "Half–1 day"
+      },
+      {
+        "name": "Jaipur",
+        "subtitle": "The Pink City's royal heritage",
+        "description": "Explore ornate palaces, hilltop forts and lively bazaars filled with textiles and crafts. Jaipur's warm colours and layered history make it a highlight of Rajasthan.",
+        "image": "https://images.unsplash.com/photo-1599661046827-dacff0c0f09a?auto=format&fit=crop&w=1000&q=85",
+        "best": "October – March",
+        "duration": "2 days"
+      },
+      {
+        "name": "Kerala",
+        "subtitle": "Backwaters and green escapes",
+        "description": "Cruise quiet waterways, visit spice gardens and unwind among coconut palms. Kerala's backwaters and hill country offer a slower, nature-rich side of India.",
+        "image": "https://images.unsplash.com/photo-1602216056096-3b40cc0c9944?auto=format&fit=crop&w=1000&q=85",
+        "best": "October – March",
+        "duration": "2–4 days"
+      },
+      {
+        "name": "Ladakh",
+        "subtitle": "High-altitude Himalayan wonder",
+        "description": "Vast mountain passes, clear lakes and monasteries create an unforgettable landscape. Travel slowly to acclimatise and respect the fragile high-altitude environment.",
+        "image": "https://images.unsplash.com/photo-1519681393784-d120267933ba?auto=format&fit=crop&w=1000&q=85",
+        "best": "June – September",
+        "duration": "4–6 days"
+      }
+    ]
+  }
+}

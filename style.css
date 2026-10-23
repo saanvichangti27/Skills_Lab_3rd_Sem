@@ -1122,3 +1122,371 @@ input:focus-visible {
     transition-duration: .01ms !important;
   }
 }
+
+/* ==========================================
+   TRAVELTHEWORLD — SKETCH-INSPIRED HOME PAGE
+   Added styles: home page only
+   ========================================== */
+
+.home-design .site-header {
+  height: 82px;
+  padding: 0 5%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  border-bottom: 1px solid rgba(255,255,255,.18);
+  background: rgba(4,13,24,.45);
+}
+
+.home-design .brand {
+  font-size: clamp(18px, 2vw, 25px);
+}
+
+.home-header-actions {
+  margin-left: auto;
+  display: flex;
+  align-items: center;
+  gap: 18px;
+}
+
+.destination-label {
+  color: #f4eee5;
+  font: 400 22px var(--serif);
+}
+
+.country-select-wrap {
+  position: relative;
+  min-width: 190px;
+}
+
+.country-select-wrap select {
+  width: 100%;
+  appearance: none;
+  -webkit-appearance: none;
+  background: transparent;
+  color: #f6f1e9;
+  border: 1px solid rgba(217,189,138,.75);
+  border-radius: 30px;
+  padding: 11px 36px 11px 15px;
+  font-size: 11px;
+  cursor: pointer;
+}
+
+.country-select-wrap select option {
+  background: #0b1a2b;
+  color: white;
+}
+
+.select-arrow {
+  position: absolute;
+  top: 50%;
+  right: 14px;
+  transform: translateY(-60%);
+  color: var(--gold);
+  pointer-events: none;
+  font-size: 19px;
+}
+
+.compatibility-nav,
+.compatibility-search {
+  display: none !important;
+}
+
+.home-design .mobile-menu {
+  display: none;
+}
+
+.home-design .globe-view {
+  min-height: 100svh;
+  height: 100svh;
+  min-height: 720px;
+  position: relative;
+  overflow: hidden;
+  display: none;
+  background:
+    radial-gradient(ellipse at 50% 52%, #123958 0%, #081c30 39%, #030a13 78%);
+  border: 1px solid rgba(217,189,138,.24);
+}
+
+.home-design .globe-view.active-view {
+  display: block;
+}
+
+.home-design .globe-view:before {
+  opacity: .35;
+}
+
+.sketch-heading {
+  position: absolute;
+  z-index: 5;
+  top: 112px;
+  left: 20px;
+  right: 20px;
+  text-align: center;
+  pointer-events: none;
+}
+
+.sketch-heading .eyebrow {
+  font-size: 9px;
+  letter-spacing: .24em;
+  margin-bottom: 12px;
+}
+
+.sketch-heading h1 {
+  font: 400 clamp(38px, 5vw, 61px)/1.1 var(--serif);
+  letter-spacing: -.035em;
+  margin: 0;
+  color: #f8f3eb;
+}
+
+.sketch-heading > p:last-child {
+  color: #b7c5d3;
+  font-size: 12px;
+  margin: 12px 0 0;
+}
+
+.sketch-globe-area {
+  position: absolute;
+  width: min(650px, 75vw);
+  height: min(440px, 53vh);
+  min-height: 300px;
+  top: 48%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.sketch-globe-area .globe-canvas {
+  position: absolute;
+  inset: 0;
+  z-index: 2;
+}
+
+.sketch-globe-area .globe-loading {
+  background: transparent;
+}
+
+.sketch-orbit {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  border: 1px solid rgba(217,189,138,.19);
+  border-radius: 50%;
+  pointer-events: none;
+  transform: translate(-50%, -50%) rotate(-18deg);
+}
+
+.sketch-orbit-one {
+  width: 98%;
+  height: 48%;
+}
+
+.sketch-orbit-two {
+  width: 85%;
+  height: 62%;
+  transform: translate(-50%, -50%) rotate(28deg);
+  border-color: rgba(130,184,224,.15);
+}
+
+.sketch-globe-area .globe-label {
+  bottom: -7px;
+  color: #a9b8c8;
+  letter-spacing: .2em;
+  font-size: 8px;
+}
+
+.home-design .country-rail {
+  display: none !important;
+}
+
+.sketch-bottom {
+  position: absolute;
+  z-index: 5;
+  left: 20px;
+  right: 20px;
+  bottom: 76px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.sketch-bottom p {
+  font-size: 11px;
+  color: #c0cbd7;
+  margin: 0;
+  text-align: center;
+}
+
+.itinerary-button {
+  min-width: 210px;
+  padding: 13px 22px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  border: 1px solid var(--gold);
+  border-radius: 30px;
+  background: rgba(8,22,36,.65);
+  color: #f8f0e2;
+  font-size: 12px;
+  letter-spacing: .04em;
+  transition: background .25s, color .25s, transform .25s;
+}
+
+.itinerary-button > span:first-child {
+  color: var(--gold);
+}
+
+.itinerary-button .button-arrow {
+  color: var(--gold);
+  transition: transform .25s;
+}
+
+.itinerary-button:hover {
+  background: var(--gold);
+  color: #06111f;
+  transform: translateY(-2px);
+}
+
+.itinerary-button:hover > span {
+  color: #06111f;
+}
+
+.itinerary-button:hover .button-arrow {
+  transform: translateX(4px);
+}
+
+.home-design .home-footer {
+  z-index: 5;
+  bottom: 22px;
+  left: 5%;
+  right: 5%;
+  font-size: 8px;
+  letter-spacing: .16em;
+}
+
+/* Responsive home page */
+
+@media (min-width: 1100px) {
+  .sketch-globe-area {
+    width: min(690px, 58vw);
+    height: min(470px, 54vh);
+  }
+}
+
+@media (max-width: 760px) {
+  .home-design .site-header {
+    height: 72px;
+    padding: 0 18px;
+    gap: 10px;
+  }
+
+  .home-design .brand {
+    font-size: 17px;
+    gap: 6px;
+  }
+
+  .home-design .brand-mark {
+    font-size: 25px;
+  }
+
+  .home-header-actions {
+    gap: 8px;
+  }
+
+  .destination-label {
+    font: 400 16px var(--serif);
+  }
+
+  .country-select-wrap {
+    min-width: 0;
+    width: 135px;
+  }
+
+  .country-select-wrap select {
+    padding: 10px 26px 10px 10px;
+    font-size: 10px;
+  }
+
+  .select-arrow {
+    right: 9px;
+  }
+
+  .home-design .globe-view {
+    min-height: 760px;
+    height: 100svh;
+  }
+
+  .sketch-heading {
+    top: 115px;
+  }
+
+  .sketch-heading h1 {
+    font-size: clamp(36px, 9vw, 48px);
+  }
+
+  .sketch-heading > p:last-child {
+    font-size: 11px;
+  }
+
+  .sketch-globe-area {
+    top: 47%;
+    width: 100vw;
+    height: 360px;
+    min-height: 280px;
+  }
+
+  .sketch-orbit-one {
+    width: 96%;
+    height: 42%;
+  }
+
+  .sketch-orbit-two {
+    width: 83%;
+    height: 56%;
+  }
+
+  .sketch-globe-area .globe-label {
+    font-size: 7px;
+  }
+
+  .sketch-bottom {
+    bottom: 78px;
+    gap: 12px;
+  }
+
+  .itinerary-button {
+    min-width: 190px;
+    padding: 12px 18px;
+  }
+
+  .home-design .home-footer {
+    bottom: 19px;
+    font-size: 7px;
+    letter-spacing: .08em;
+  }
+}
+
+@media (max-width: 390px) {
+  .home-design .brand {
+    font-size: 15px;
+  }
+
+  .destination-label {
+    font-size: 14px;
+  }
+
+  .country-select-wrap {
+    width: 120px;
+  }
+
+  .sketch-heading h1 {
+    font-size: 35px;
+  }
+}
